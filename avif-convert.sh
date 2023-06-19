@@ -23,7 +23,7 @@ then
     echo "Info: Image $IMAGE_NAME does not exist, building it now."
 
     # Try to pull newer version of base image.
-    docker pull debian:11-slim
+    docker pull debian:12-slim
     if [ $? -ne 0 ]
     then
         echo "Warning: Could not pull newer base image, but continuing anyway."
