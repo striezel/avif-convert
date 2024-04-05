@@ -3,7 +3,7 @@
 Converts AVIF images to JPEG images, using a Docker container as the environment
 that performs the conversion.
 
-It's assumed that you know have Docker installed, so no further information is
+It's assumed that you have Docker installed, so no further information is
 provided. If you need more information, take a look at
 <https://docs.docker.com/>, in particular the "Get started with Docker" guide.
 
