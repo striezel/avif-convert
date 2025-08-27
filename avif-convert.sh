@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Copyright (C) 2023  Dirk Stolle
+# Copyright (C) 2023, 2025  Dirk Stolle
 #
 # SPDX-License-Identifier: LGPL-3.0-or-later
 
@@ -23,7 +23,7 @@ then
     echo "Info: Image $IMAGE_NAME does not exist, building it now."
 
     # Try to pull newer version of base image.
-    docker pull debian:12-slim
+    docker pull debian:13-slim
     if [ $? -ne 0 ]
     then
         echo "Warning: Could not pull newer base image, but continuing anyway."
