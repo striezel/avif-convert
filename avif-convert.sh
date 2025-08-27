@@ -42,16 +42,16 @@ fi
 # 1st parameter = AVIF image path
 if [ -z "$1" ]
 then
-  echo "First parameter must be an AVIF file!"
-  echo " "
-  echo "Usage:"
-  echo "  avif-convert.sh /path/to/image.avif"
-  exit 1
+    echo "First parameter must be an AVIF file!"
+    echo " "
+    echo "Usage:"
+    echo "  avif-convert.sh /path/to/image.avif"
+    exit 1
 fi
 if [ ! -f "$1" ]
 then
-  echo "First parameter must be an existing file!"
-  exit 1
+    echo "First parameter must be an existing file!"
+    exit 1
 fi
 AVIF_FILE="$1"
 BASENAME=$(basename "$AVIF_FILE")
